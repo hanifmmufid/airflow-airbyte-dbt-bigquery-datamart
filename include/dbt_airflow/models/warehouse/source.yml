@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: dbt_airflow  # The dataset name in BigQuery
+    database: training-de-444307  # BigQuery Project ID
+    schema: dbt_airflow  # BigQuery Dataset
+    tables: 
+      - name: raw_orders
+      - name: raw_products
+      - name: raw_suppliers
+      - name: raw_order_details
+      - name: raw_inventory_transactions
