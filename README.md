@@ -1,16 +1,23 @@
-# Hands On Materi Apache Airflow in Data Engineer Class - Basic
-This repository for course Data Engineer - Basic. In this course use tech stack :
-- Data Ingestion & Transformation : Python, SQL and Pandas
-- Workflow Orchestration : Apache Airflow
-- Data Platform : OLTP(PostgreSQL)
+# Airflow + Airbyte + dbt + BigQuery DataMart
 
-Prerequisite :
-- Already Install Docker Desktop for Windows OS or any docker software for Linux/Mac Os
-- Already install postgresql in local computer
-- Have knowledge Basic Docker & Docker Compose
+This repository contains an ELT pipeline project designed to build a DataMart using Airflow, Airbyte, dbt, and BigQuery. The project demonstrates how to automate data ingestion, transformation, and orchestration for creating a structured DataMart from public datasets.
 
-Step by step to run Apache Airflow with use Docker
+---
 
-1) Download latest docker compose airflow in [here](https://airflow.apache.org/docs/apache-airflow/2.9.3/docker-compose.yaml)
-2) Open docker-compose.yaml then add 1 parameter AIRFLOW__CORE__TEST_CONNECTION: 'Enabled' and update parameter AIRFLOW__CORE__LOAD__EXAMPLES become false
-3) Run docker compose up -d
+## 🚀 Features
+
+- **Data Ingestion**: Extract data from public HTTP sources using Airbyte and load it into BigQuery.  
+- **Data Transformation**: Utilize dbt for data transformation to ensure the data is clean, organized, and ready for analytics.  
+- **Orchestration**: Manage the workflow and dependencies with Apache Airflow, creating an end-to-end ELT pipeline.  
+- **DataMart Creation**: Automate the process of building a DataMart optimized for business intelligence and reporting.  
+
+---
+
+## 🛠️ Technologies Used
+
+1. **Airflow**: Orchestrates the ELT pipeline.  
+2. **Airbyte**: Handles data ingestion from public sources.  
+3. **dbt**: Performs data transformation within BigQuery.  
+4. **BigQuery**: Serves as the destination for data storage and transformation.  
+
+---
